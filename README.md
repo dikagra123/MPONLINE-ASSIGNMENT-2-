@@ -2,7 +2,7 @@
 Customer churn Prediction using logistic regression
 Author: Diksha Agrawal
 
-Registration Number: 23BCEY10036
+Registration Number: 23BEY10036
 
 Application Number: IN26010961
 
