@@ -24,19 +24,30 @@ seaborn
 scikit-learn
 kaggle
 Methodology
+
 Data Understanding: Loaded the dataset and categorized features into numerical and categorical components while isolating Churn as the target variable.
+
 Data Preprocessing:
 Cleaned TotalCharges by converting to numeric and imputing missing values with the median.
 Encoded Churn target as binary (Yes: 1, No: 0).
+
 Generated dummy variables for categorical features using One-Hot Encoding (drop_first=True).
+
 Standardized features using StandardScaler to ensure convergence during optimization.
+
 Data Splitting: Divided the dataset into 80% training set and 20% testing set using train_test_split.
+
 Model Development: Trained a LogisticRegression classifier with max_iter=1000 on scaled features.
+
 Model Evaluation: Evaluated model performance using Accuracy, Precision, Recall, F1-Score, and a Confusion Matrix heatmap.
+
 Results
+
 Accuracy: 81.97%
 Precision: 68.31%
 Recall: 59.52%
 F1-Score: 0.6361
+
 Conclusion
+
 Logistic Regression effectively models customer churn with an overall accuracy of 81.97%. Contract type, tenure length, and monthly charges serve as significant predictors. The primary limitation of Logistic Regression is its linear decision boundary, which misses complex non-linear feature interactions (such as high monthly charges combined with short tenure). Non-linear models like Random Forest or XGBoost would likely yield better recall for detecting at-risk customers.
